@@ -1,0 +1,272 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-cabecario {
+    width: 100%;
+    display: block;
+}
+
+.icons {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+}
+
+.icons img {
+    width: 20px;
+    margin-right: 25px;
+}
+
+.logo {
+    margin-top: -30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.pro  {
+       
+        width: 20vw;
+
+    }
+
+.pro2 {
+    margin-right: 85px;
+
+}
+
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin:10px;
+}
+
+.header-icons .logo img {
+    width: 100px; 
+    
+}
+
+.header-icons .icons img {
+    width: 30px; 
+    
+}
+/* Estilos dos produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.produto {
+    width: calc(30% - 20px); 
+    margin-bottom: 20px; 
+    background-color: #f9f9f9;
+    position: relative; 
+    overflow: hidden; 
+    box-sizing: border-box; 
+}
+
+/* Figura com fundo verde */
+.produto:hover figure {
+    background-color: green;
+}
+
+/* Imagem dentro do produto */
+.imagem-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-normal {
+    transition: opacity 0.3s ease; /* Transição suave da opacidade */
+}
+
+/* Quando o mouse passa por cima da imagem */
+.produto:hover .imagem-normal {
+    opacity: 0.5; 
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.produto h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.produto h1 {
+    text-align: right; 
+    margin-right: 30px; 
+}
+.produto p {
+    margin-bottom: 15px;
+}
+
+.produto .preco {
+    font-weight: bold;
+    color: #5CA720;
+    font-size: 1.2em;
+}
+.produto .comprar-btn {
+    display: block;
+    width: 50%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 2px solid transparent; 
+    background-color: #5CA720;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    border-radius: 20px; 
+}
+
+.produto .comprar-btn:hover {
+    background-color: #512200;
+    color: #fff;
+   
+}
+
+/* Estilos para a seção do rodapé */
+.footer-contato {
+    background-color: #e7e3e3;
+    color: #000;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left p {
+    margin: 5px 0;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.netller input[type="email"] {
+    margin: 10px 0;
+    padding: 5px;
+    width: 200px;
+    outline: none;
+}
+
+.enviar-btn {
+    background-color: #5CA720;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.enviar-btn:hover {
+    background-color: #4B801F;
+}
+
+/* Estilos para a seção de mídia */
+.midia {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para a seção de social media */
+.social-media {
+    display: flex;
+    
+}
+
+.social-media img {
+    margin-right: 10px;
+    max-width: 50px; 
+}
+
+/* Estilos para a seção de cartões */
+.cartoes {
+    display: flex;
+}
+
+.cartoes img {
+    margin-left: 10px;
+    max-width: 50px; 
+}
+
+
+/* Estilos do rodapé para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .icons {
+        right: 10px; 
+    }
+    .header-content {
+        flex-direction:initial;
+        align-items: center;
+    }
+
+    .pro,
+    .pro2 {
+        margin: 0;
+        font-size: 1em; 
+        text-align: center; 
+        margin-bottom: 10px; 
+    }
+
+    .pro {
+        text-align: left ; 
+        margin-left: 5px;  
+    
+    }
+    .pro2{
+        text-align:left;
+        margin-left: auto; 
+    }
+    .produto {
+        width: calc(50% - 20px); 
+    }
+
+}
+
+/* Consulta de mídia para dispositivos com largura máxima de 480px */
+@media screen and (max-width: 480px) {
+    .produto {
+        width: calc(100% - 20px); 
+    }
+}
+
+
+
+
